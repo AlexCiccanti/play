@@ -1,0 +1,43 @@
+random = {}
+random["Name"] = "Albert"
+random["Age"] = "6"
+random["Favorite Food"] = "Apples"
+random["Age"] = "10" # Gets the latest key if there are duplicate keys
+for each in random.items():
+  print(each)
+
+about = {
+  "Chloe": 2000,
+  "Britney": 2005,
+  "Jason": 1999,
+  "David": 2001
+}
+
+for value in about.values():
+  print(value)
+
+for key, value in about.items():
+  about[key] = value * 2
+print(about)
+
+age = {
+  "Me": 14,
+  "Sister": 17,
+  "Mom": 43,
+  "Dad": 46
+}
+my_age = age.get("Me")
+print("I am", my_age, "years old.")
+for key, value in age.items():
+  age[key] = value + 5
+my_age = age.get("Me")
+print("In 5 years I will be", my_age, "years old.")
+age_copy = age.copy()
+print(age_copy)
+
+for key in age_copy.keys():
+  print(key)
+
+stuff = {"Banana": "yellow", "Apple": "red", "Grape": "purple"}
+for i in stuff.items():
+  print(i)
